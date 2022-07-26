@@ -49,7 +49,7 @@ if (8&7){
 }
 
 
-if ([1,2]==[1,2])//string is an object
+if ([1,2]==[1,2])//string is an object,both objs are different
 {
     console.log('hey')
 }
