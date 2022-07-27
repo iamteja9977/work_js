@@ -1,6 +1,11 @@
+
+// 4.Build Mini calculator having functionalities - *, /, +, - , %, squareroot, exponentiation, floor, ceil
+
 let operator=1;
 // let operator=prompt("enter input:")
 var a=1.4,b=30;
+//useful ,when we take  input from user
+console.log("    ....MENU.....")
 console.log("enter 0  for add")
 console.log("enter 1  for sub")
 console.log("enter 2  for mul")
@@ -11,8 +16,6 @@ console.log("enter 6  for expo")
 console.log("enter 7  for floor")
 console.log("enter 8  for ceil")
 switch(operator){
-
-
     case 0:
         out=a+b
         console.log(out)

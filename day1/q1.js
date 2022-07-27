@@ -1,3 +1,5 @@
+//1. Accept only numbers, Make a number always positive though given negative? With & without builtin function?
+
 var a=-12
 if(a>=0){
     a*=1
