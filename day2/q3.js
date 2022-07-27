@@ -2,7 +2,7 @@
 // if he has more than 75, allow to exam
 // if he doesnt has ask for permission, if yes allow him, if not dont allow him
 
-var a=76
+var a=56
 var permission='T';
 if(a>=75){
     console.log("allow  to exam ");
