@@ -2,7 +2,7 @@
 // 5.roots of quadratic equation, nature of roots 
 
 //roots of quadratic equation, nature of roots 
-var a=1,b=2,c=3;
+var a=0,b=4,c=4;
 D=(b*b)-4*a*c
 //real and equal
 if(D==0){
@@ -12,7 +12,7 @@ if(D==0){
 
 }
 //real and diff
-else if(D>0){
+else if(D>0 ){
 r1=(-b+(Math.sqrt(D)))/(2*a)
 r2=(-b-(Math.sqrt(D)))/(2*a)
 console.log("root1:" +r1)
