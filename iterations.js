@@ -96,7 +96,6 @@
 // while(i<=(a.length-1) )
 // //i<(a.length)
 // {
-
 // console.log(a[i])
 // i++
 // }

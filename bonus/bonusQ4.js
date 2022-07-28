@@ -18,17 +18,31 @@
 
    //bonus question
    //table of 2,3,4,5 continuously
-// using while loop 
-table=1;
-while(table<5){
-   table++;
-   i=0;
-   while(i<10){
-      i++
+// using while loop  pre-increment
+// table=1;
+// while(table<5){
+//    table++;
+//    i=0;
+//    while(i<10){
+//       i++
+//       console.log(table + " * " + (i) + " = " + (table * (i))); 
+//    }
+//    console.log("----------");
+// }
+
+// using while loop  post-increment
+table=2;
+while(table<=5){
+   i=1;
+   while(i<=10){
+    //   i++
       console.log(table + " * " + (i) + " = " + (table * (i))); 
+      i++
    }
+   table++;
    console.log("----------");
 }
+
 
 //using for loop
 
