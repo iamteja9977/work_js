@@ -1,4 +1,4 @@
-// works in both array and string
+// works on both array and string
 //array
 let a=['a','b','c','d']
 console.log(a, typeof a)

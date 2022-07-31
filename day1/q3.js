@@ -35,9 +35,9 @@ var b1=1
 var b2=1
 var c1=1
 var c2=5
-ab= Math.sqrt(Math.pow((a1-b1),2)+(Math.pow(a2-b2),2))
-bc=Math.sqrt(Math.pow((b1-c1),2)+(Math.pow(b2-c2),2))
-ca=Math.sqrt(Math.pow((c1-a1),2)+(Math.pow(c2-a2),2))
+ab= Math.sqrt(Math.pow((a1-b1),2)+(Math.pow((a2-b2),2)))
+bc=Math.sqrt(Math.pow((b1-c1),2)+(Math.pow((b2-c2),2)))
+ca=Math.sqrt(Math.pow((c1-a1),2)+(Math.pow((c2-a2),2)))
 console.log(ab)
 console.log(bc)
 console.log(ca)
