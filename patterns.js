@@ -311,37 +311,47 @@
 // }
 // console.log(s)
 
-//Q14
-// not working fine
-let n = 5; // height of pattern
-let string = "";
-let count = 1;
-// External loop
-for (let i = 1; i <= n; i++) {
-//   Internal loop
-  if(i<=4){
-     for(j=i; j<10; j++)
-     {
-        string +=' '
-      }
-     for (let j = 1; j <= i; j++) {
-       string +=count+ '';
-       count++;
-       }
-     }
-   else{
-        for(j=i; j<n; j++)
-        {
-           string +=''
-         }
-        for (let j = 1; j <= i; j++) {
-          string +=count+'';
-          count++;
-          }
-   }
-  string += "\n";
+n=10
+for(i=1;i<=n;i++){
+  s=''
+  for(j=1;j<=i;j++)
+  {
+    s=s+(i*j)+" "
+  }
+console.log(s)
 }
-console.log(string);
+
+//Q14
+// // not working fine
+// let n = 5; // height of pattern
+// let string = "";
+// let count = 1;
+// // External loop
+// for (let i = 1; i <= n; i++) {
+// //   Internal loop
+//   if(i<=4){
+//      for(j=i; j<10; j++)
+//      {
+//         string +=' '
+//       }
+//      for (let j = 1; j <= i; j++) {
+//        string +=count+ '';
+//        count++;
+//        }
+//      }
+//    else{
+//         for(j=i; j<n; j++)
+//         {
+//            string +=''
+//          }
+//         for (let j = 1; j <= i; j++) {
+//           string +=count+'';
+//           count++;
+//           }
+//    }
+//   string += "\n";
+// }
+// console.log(string);
 
 
 //Q15

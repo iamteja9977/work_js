@@ -25,5 +25,7 @@ else{
  console.log("enetered num is less than 1")
     }
 
+    
+
 
 
