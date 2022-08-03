@@ -33,14 +33,6 @@
 // * *
 // *
 
-//using single loop
-// s=''
-// for(i=5;i>=1;i++){
-//   s=s+'*'
- 
-// }
-// console.log(s)
-
 //using single forloop with substring
 // s='* * * * *'
 // for(let i=s.length;i>=1;i-=1){//
@@ -60,14 +52,13 @@
 // }
 // console.log(s)
 
-// n=5//no.of rows
- //by sir
-//  s=''// empty string
-// for(i=5;i>=1;i--){   
-//   s=''  //reset string
-//   for(j=i;j>=1;j--)    //
-//   {
-//     s+='* '
-//   }
-//   console.log(s)
-// }
+n=5//no.of rows
+ s=''// empty string
+for(i=5;i>=1;i--){   
+  s=''  //reset string
+  for(j=i;j>=1;j--)    //
+  {
+    s+='* '
+  }
+  console.log(s)
+}

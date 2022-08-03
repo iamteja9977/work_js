@@ -159,7 +159,7 @@
 // 12345678
 
 // using single for loop
-// n=5
+// n=8
 // s=''
 // for(i=1;i<=n;i++){
 //   s=s+i
@@ -237,7 +237,6 @@
 // console.log(s)
 
 //Q11
-
 // n=5//no.of rows
 // s=''
 // count=1
