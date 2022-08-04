@@ -1,20 +1,33 @@
 // fibinocci series
-function fibo(n){
-    let n1 = 0, n2 = 1, sum=0;
-    // s=''
-    output=''
-for (let i = 1; i <= n; i++) {
-    // console.log(n1);   //it will print line by line way1
-    output+=`${n1} `   //way3
-    // s.concat(console.log(n1))   //line by line way2
-    sum = n1 + n2;
-    n1 = n2;
-    n2 = sum;
-}
-console.log(output)
-}
-fibo(8)
-// export default fibo
+// function fibo(n){
+//     let n1 = 0, n2 = 1, sum=0;
+//     // s=''
+//     output=''
+// for (let i = 1; i <= n; i++) {
+//     // console.log(n1);   //it will print line by line way1
+//     output+=`${n1} `   //way3
+//     // s.concat(console.log(n1))   //line by line way2
+//     sum = n1 + n2;
+//     n1 = n2;
+//     n2 = sum;
+// }
+// console.log(output)
+// }
+// fibo(8)
+
+
+//using recursions
+// function fibo(n){
+//     if(n<2) return n;
+
+//        else {
+//         return fibo(n-1)+fibo(n-2)
+//        }
+// }
+// n=2
+// for (i=0;i<n;i++){
+// console.log(fibo(i))
+// }
 
 
 //armstrong number
@@ -60,4 +73,76 @@ fibo(8)
 //     }
 // }
 // arm()
+
+
+
+
+//sum of integer using recursion
+// function s(n){
+//     if(n>0)
+//     return n+s(n-1)
+//     else 
+//     return n
+    
+//   }
+//   console.log(s(3))
+  
+  //sum of digits of integer
+//   function dig(n){
+//     if(n==0)
+//     return 0
+//     else 
+//     return n%10+Math.floor(dig(n/10))
+//   }
+// console.log(dig(123))
+
+//2 table
+// function tab(n,i){
+//     if(i==11)
+//     return 0
+//     else{
+//     console.log(`${n} * ${i} = ${n*i} `)
+//     return tab(n,i+1)
+//     }
+// }
+// tab(2,1)
+
+
+//multiple table
+//way1
+// function tab(n,i){
+//     if(i==11)
+//     {return} 
+//     // else{
+//     console.log(`${n} * ${i} = ${n*i} `)
+//     return tab(n,i+1)
+    
+//     // }
+// }
+// for(j=2;j<=5;j++){
+// tab(j,1)
+// }
+
+//way2
+// function tab(n){
+//     if(n==11)
+//     {return} 
+//     for(i=1;i<=10;i++){
+//     console.log(`${n} * ${i} = ${n*i} `)
+//         }
+//         return tab(n+1)
+//     }
+// tab(5)
+
+
+// print 1-10
+function ten(n){
+    if(n==11)
+    return 0
+    else{
+      console.log(n)
+    return ten(n+1)
+    }
+}
+ten(1)
 

@@ -112,16 +112,16 @@
 
 
 //factorial
-function f(n){
-  if(n<=1) return 1;  // more efficient
-  // if(n==0)
-  //  return 1;
-  //  else if(n==1)
-  //  return 1;
-   else
-   return n*f(n-1)
- }
- console.log(f(0))
+// function f(n){
+//   if(n<=1) return 1;  // more efficient
+//   // if(n==0)
+//   //  return 1;
+//   //  else if(n==1)
+//   //  return 1;
+//    else
+//    return n*f(n-1)
+//  }
+//  console.log(f(0))
 
 //for handling -ve number also
 // num=-2
@@ -141,3 +141,6 @@ function f(n){
 //    else
 //    return n*f(n-1)
 //  }
+
+
+
