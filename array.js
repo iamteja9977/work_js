@@ -1,14 +1,14 @@
 // for 'in' 
-// a=[1,2,3]
-// for(i in a){
-// console.log(a[i])
-// }
+a=[1,2,3]
+for(i in a){
+console.log(a[i])
+}
 
 //for 'of'
-// a=[1,2,3]
-// for(i of a){
-// console.log(i)
-// }
+a=[1,2,3]
+for(i of a){
+console.log(i)
+}
 
 
 //toUppercase
@@ -41,9 +41,16 @@
 
 //using map function
 
-a=['code','for','india']
-a=a.map(i => i.toUpperCase())
-    console.log(a)
+// a=['code','for','india']
+// a=a.map(i => i.toUpperCase())
+//     console.log(a)
 
+// s="thiru"
+// console.log(s.slice(1))
+// // console.log(s.splice(1))
+
+// s=['t','h','i','r','u']
+// console.log(s.slice(1))
+// console.log(s.splice(1))
 
 
