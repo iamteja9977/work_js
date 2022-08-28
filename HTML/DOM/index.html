@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .heading {
+        background-color: blue;
+        color: rgb(255, 255, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading" class="heading">This is Heading</h1>
+    <h1 style="background-color: black; color: white">This is Line 2</h1>
+    <h1>This is Line 3</h1>
+    <div class="htmlbody">
+
+    </div>
+    <button onclick="changeHeading()">Click</button>
+    <button onclick="changeTag()">Change Tag</button>
+    <button onclick="changeColor()">Change Color</button>
+  </body>
+  <script>
+    function changeHeading() {
+      let head = document.getElementById("heading");
+      head.innerText = "This is New";
+      console.log("I am called");
+    }
+    function changeTag() {
+      let tag = document.getElementsByClassName("htmlbody");
+      tag.innerHTML = `<h1>This is From JS</h1>`;
+    }
+    // console.log(document.getElementsByTagName("h1")[2]);
+    // console.log(document.querySelector("h1"));
+    console.log(document.querySelectorAll("h1")[0]);
+    console.log(document.querySelector(".htmlbody"));
+    console.log(document.querySelector(".heading").innerText);
+    function changeColor() {
+      let head = document.getElementById("heading");
+      head.style = "background-color:black; color:white";
+      head.innerText = "This is Very Easy";
+    }
+  </script>
+</html>

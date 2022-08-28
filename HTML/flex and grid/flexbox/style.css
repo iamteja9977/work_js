@@ -31,6 +31,7 @@
   .container-1 div, .container-2 div, .container-3 div{
     border:1px #ccc solid;
     padding:10px;
+    margin:10px
   }
   
   .box-1{

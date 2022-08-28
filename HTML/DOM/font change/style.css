@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  }
+  .container{
+    border:2px solid blue;
+    background-color:skyblue;
+    padding:10px;
+    margin:25px
+  }
+  h1{
+    text-align: center;
+    
+  }
+  footer{
+    background-color:black;
+    color:white;
+    margin-top:10px;
+    margin:25px
+  }
+@media (max-width:600) {
+   .container{
+        text-align: center;
+    }
+    
+}
