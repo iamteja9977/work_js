@@ -1,0 +1,72 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treasure Hunt Game</title>
+  </head>
+  <body>
+    <div>
+      <h1>Treasure Game</h1>
+      <h1>Welcome <span id="player-name"></span></h1>
+      <h1>Attempts : <span id="attempts"></span></h1>
+    </div>
+    <div>
+      <table id="my-game"></table>
+    </div>
+  </body>
+  <script>
+    let attempt = 0;
+    function main() {
+      //Input Take Username
+
+      //   let username = prompt("Enter your Name");
+
+      //Access ID from Player-name and Display there
+      //   document.getElementById("player-name").innerText = username;
+
+      //Generate TableData from 1 to 100
+      const tableData = [];
+      for (let i = 1; i <= 100; i++) {
+        //Push Elements 1 to 100
+        tableData.push(i);
+      }
+      console.log(tableData);
+
+      //Access Table Tag
+      let table = document.getElementById("my-game");
+      let row,
+        col,
+        counter = 0;
+      for (let i = 1; i <= 10; i++) {
+        // Generate Row Tags <tr>
+        row = document.createElement("tr");
+        for (let j = 1; j <= 10; j++) {
+          //Generate <td> Tags   
+          col = document.createElement("td");
+
+          //Assign ID From Counter
+          col.id = counter + 1;
+
+          //Add Inner Text from Table Data
+          col.innerText = tableData[counter];
+
+          //Append the td Tag to the Row
+          row.appendChild(col);
+
+          //Incement Count
+          counter++;
+        }
+
+        //Append the Whole row to Table
+        table.appendChild(row);
+      }
+    }
+
+    //Invoke the Function
+    main();
+  </script>
+</html>
