@@ -7,7 +7,7 @@
     <title>Document</title>
     <style>
           body {
-                background: rgb(2, 0, 36);
+                /* background: rgb(2, 0, 36); */
                 background: linear-gradient(
                     90deg,
                     rgba(2, 0, 36, 1) 0%,
@@ -18,21 +18,32 @@
          .main {
                 /* justify-content: center; */
                 display: flex;
+                gap:10px;
             }
 
         .form{
-            width: 50%;
+            
                 float: left;
-                border: 2px solid;
-                margin: 0.5%;
+                border: 2px solid red;
+                width: 50%;
+                /* margin: 0.5%; */
                 padding: 10px;
+
            
             
         }
+
         .image{
-       border: 2px solid red;
-       padding: 10px;
-        width:50%;
+            /* float:right; */
+            border: 2px solid red;
+            width:50%;
+            padding: 10px;
+            
+        }
+        .image1{
+width:90%;
+height:90%;
+padding:25px;
 
         }
         @media only screen and (max-width: 600px){
@@ -40,11 +51,15 @@
                 display:none;
                 
             } */
-            .image{
-                display:none;
+            .image1{
+                /* display:none; */
+                width:70%;
+                height: 75%;
+                align-items: center;
             }
             .form{
-                width:100%;
+                align-items: center;
+                width:50%;
             }
         }
 
@@ -74,9 +89,9 @@
               <input type="text" id="email" name="email" placeholder="Enter Your Email"><br><br>
               <input type="submit" value="Submit" />
             </form>
-          </div>
+        </div>
           <div class="image">
-            <img class="image1"  id="img_key" src="wow.gif" alt="This is an Image" />
+            <img class="image1"  id="img_key" src="6.png" alt="This is an Image" />
           </div>
     </div>
 </body>

@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+    color:greenyellow;
+}
+table{
+    border:2px solid aquamarine;
+    margin:5px;
+}
+td{
+    border: 1px solid aquamarine;
+    height: 55px;
+    width:55px;
+    font-size: x-large;
+    text-align: center;
+}
+@media(max-width:600){
+ td{
+    height:30px;
+    width: 30px;
+    font-size: large;
+ }
+}

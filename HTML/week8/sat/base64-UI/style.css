@@ -1,0 +1,64 @@
+body{
+  margin-top: 75px;
+  
+    background-color: rgb(122, 197, 202);
+}
+.container{
+    border: 2px solid black;
+    text-align: center;
+    width: 75%;
+    margin:20px;
+    padding:10px;
+    padding-bottom: 25px;
+    border-radius: 20px;
+}
+h1{
+background-color: black;
+color:white;
+}
+.buttonClass{
+    margin:10px;
+    
+}
+#buttonID1, #buttonID2{
+    border: 1.5px solid red;
+    border-radius: 10px;
+}
+
+#buttonID1:hover  {
+    background-color: black;
+    color: white
+} 
+#buttonID2:hover  {
+    background-color: black;
+    color: white
+} 
+
+.textarea{
+    border: 1.5px solid black;
+    margin:20px;
+    padding:20px;
+    background-color: rgb(192, 87, 192);
+}
+
+textarea{
+    height: 50px;
+    width: 300px;
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+      background-color: lightgreen;
+    }
+
+
+ textarea{
+    height: 50px;
+    width: 150px;
+   } 
+  }
+  
+
+   
+   

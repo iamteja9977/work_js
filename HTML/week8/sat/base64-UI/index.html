@@ -1,0 +1,42 @@
+<!-- Convert  Base64 CLI  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+    <div class="container">
+        <div class="header">
+            <h1> Base64 UI</h1>
+        </div>
+        <div class="label">
+            <label >Click on the button,acc which operation do you want
+                 to perform :</label>
+        </div>
+       <div class="buttonClass" >
+        <button id="buttonID1" type="button" onclick= "base64Encoding()">Encode</button>
+        <button id="buttonID2" type="button" onclick="base64Decoding()">Decode</button>
+       </div>
+
+       <div class="textarea">
+        <textarea
+        id="textinput"
+        name="textinput"
+        placeholder="Enter Text Here"
+      ></textarea>
+      <p><label >Your Result: </label></p>
+
+      <textarea id="newtext"  readonly></textarea>
+       </div>
+    </div>
+</center>
+<script src="decoder.js">
+</script>
+<script src="encoder.js"></script>
+</body>
+</html>
