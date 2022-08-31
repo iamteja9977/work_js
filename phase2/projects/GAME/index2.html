@@ -8,26 +8,33 @@
     <title>Treasure Hunt Game</title>
   </head>
   <body>
-    <div>
-      <h1>Treasure Game</h1>
-      <h1>Welcome <span id="player-name"></span></h1>
-      <h1>Attempts : <span id="attempts"></span></h1>
-    </div>
-    <div>
-      <center>
+    <audio id="audio1" src="you_lose.mp3"></audio>
+    <audio id="audio2" src="you_won.mp3"></audio>
+    <audio id="audio3" src="sms_sound.mp3"></audio>
+    <center>
+      <div>
+        <h1>Treasure Game</h1>
+        <h1>Welcome <span id="player-name"></span></h1>
+        <h1>Attempts : <span id="attempts">0</span></h1>
+      </div>
+      <div>
         <table id="my-game"></table>
-      </center>
-    </div>
+      </div>
+    </center>
   </body>
   <script>
     let attempt = 0;
+    // const audio = new Audio("audio.mp3");
+    // audio.play()
     function main() {
       //Input Take Username
-
-      //   let username = prompt("Enter your Name");
-
+      let username = prompt("Enter your Name");
+      console.log(username);
+      while (!username) {
+        username = prompt("Username Cannot Be Empty, Please Try Again");
+      }
       //Access ID from Player-name and Display there
-      //   document.getElementById("player-name").innerText = username;
+      document.getElementById("player-name").innerText = username;
 
       //Generate TableData from 1 to 100
       const tableData = [];
@@ -45,7 +52,7 @@
         col,
         counter = 0;
       let primesArray = [2, 3, 5, 7];
-      let visitedElements=[]
+      let visitedElements = [];
       for (let i = 1; i <= 10; i++) {
         // Generate Row Tags <tr>
         row = document.createElement("tr");
@@ -64,31 +71,33 @@
             let clickedNumber = event.target.id;
             console.log(clickedNumber);
             if (clickedNumber == 1) {
-            //   document.getElementById(clickedNumber).innerText = clickedNumber;
+              var audio=document.getElementById("audio2")
+              audio.play();
               alert("You are a Winner, Congratulations!!!!");
-              location.reload()
+             
+              location.reload("/");
             } else if (primesArray.includes(+clickedNumber)) {
+              var audio=document.getElementById("audio1")
+              audio.play();
               alert("You are Loser! Better Luck Next Time");
+              
+              location.reload("/");
+            } else if (visitedElements.includes(+clickedNumber)) {
+              alert("The Block is Already Selected");
+            } else {
+              for (let i = +clickedNumber; i <= 100; i++) {
+                if (i % +clickedNumber == 0) {
+                  document.getElementById(i).style.backgroundColor =
+                    "aquamarine";
+                  visitedElements.push(i);
+                  var audio=document.getElementById("audio3")
+              audio.play();
+                }
+              }
+              attempt++;
             }
-            else if(visitedElements.includes(+clickedNumber)){
-              alert( "block is already selected")
-            } 
-            else {
-                // visitedElements.push(+clickedNumber);
-                for(i=(+(clickedNumber));i<=100;i++){
-                  if(i% (+(clickedNumber)) == 0){
-                    document.getElementById(clickedNumber).style.background="red";
-                     visitedElements.push(i);
-                 
-               }
-            }
-            attempt++;
-              document.getElementById("attempts").innerText = attempt;
-              document.getElementById(clickedNumber).style.background="red";
-            }
-            
+            document.getElementById("attempts").innerText = attempt;
           });
-
 
           //Append the td Tag to the Row
           row.appendChild(col);
