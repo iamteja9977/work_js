@@ -8,7 +8,7 @@
 // let b = 7
 // let c = 6
 
-// if ((a+b<=c) || (b+c<=a) || (c+a<=b)){
+// if ((a+b<=c) && (b+c<=a) && (c+a<=b)){
 //     console.log("it is not a triangle")
 // }
 // else{
@@ -42,7 +42,7 @@ console.log(ab)
 console.log(bc)
 console.log(ca)
 
-if ((ab+bc<=ca) || (bc+ca<=ab) || (ca+ab<=bc)){
+if ((ab+bc<=ca) && (bc+ca<=ab) && (ca+ab<=bc)){
     console.log("it is not a triangle")
 }
     else{
