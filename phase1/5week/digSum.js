@@ -12,4 +12,4 @@ function  digsum(num){
     }
     return sum
 }
-console.log(digsum(0123))
+console.log(digsum(123))

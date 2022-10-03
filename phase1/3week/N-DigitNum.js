@@ -1,8 +1,9 @@
 //Confirm whether given number is an 'N' digit number?
-var  num = 00000123;
+var  num = 123;
 count=0
 while (num != 0) {
    num = Math.round(num/10)
+   console.log(num)
   count++;
 
 }

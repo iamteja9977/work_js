@@ -1,16 +1,16 @@
 // 1. Fibinocci series
 //using recursions
-// function fibo(n){
-//     if(n<2) return n;
+function fibo(n){
+    if(n<2) return n;
 
-//        else {
-//         return fibo(n-1)+fibo(n-2)
-//        }
-// }
-// n=20
-// for (i=0;i<n;i++){
-// console.log(fibo(i))
-// }
+       else {
+        return fibo(n-1)+fibo(n-2)
+       }
+}
+n=10
+for (i=0;i<n;i++){
+console.log(fibo(i))
+}
 
 //2. Armstrong/Narcisstic number or not?
 // sum = 0
@@ -55,29 +55,29 @@
 arr=[10, 20, 30, 40, 2, 5, 7, 153, 1024, 1634, 11]
 
 //gives the sorted array in ascending order
-result=arr.sort(function(a,b){
-return a-b })
-console.log(result)
-// console.log(result[8])
+// result=arr.sort(function(a,b){
+// return a-b })
+// console.log(result)
+// // console.log(result[8])
 
-function prime(result){
-for(i=0;i<result.length;i++){
- let flag=true;
-count=0
- if (result[i] > 1) {
-    for (let i = 2; i < result[i]; i++) {
-        if (result[i] % i == 0) 
-        {//not to be multiple of any number
-            flag = false;
-            break;
-        }
-        count++
-    }
+// function prime(result){
+// for(i=0;i<result.length;i++){
+//  let flag=true;
+// count=0
+//  if (result[i] > 1) {
+//     for (let i = 2; i < result[i]; i++) {
+//         if (result[i] % i == 0) 
+//         {//not to be multiple of any number
+//             flag = false;
+//             break;
+//         }
+//         count++
+//     }
    
-  }
-}
-return count;
-}
-pc=prime(result)
-console.log("prime count :" +pc)
+//   }
+// }
+// return count;
+// }
+// pc=prime(result)
+// console.log("prime count :" +pc)
 

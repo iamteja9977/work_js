@@ -59,23 +59,23 @@
 
 
 //// 2. Write a function that pre-pends(adding as pre-fix) a zero to single digit numbers
-// function array(){
-//     let A = [1,2,45,65,8,9]
-//      empty = []
-//  for (i=0;i<A.length;i++){
-//      let n = '0'
-//  if(A[i]<10){
-//      n += A[i]
-//  empty.push(n)
-//  }
-//  else{
-//      n = ''
-//      empty.push(n+A[i])
-//  }
-//  }
-//  console.log(empty)
-//  }
-//  array()
+function array(){
+    let A = [1,2,45,65,8,9]
+     empty = []
+ for (i=0;i<A.length;i++){
+     let n = '0'
+ if(A[i]<10){
+     n += A[i]
+ empty.push(n)
+ }
+ else{
+     n = ''
+     empty.push(n+A[i])
+ }
+ }
+ console.log(empty)
+ }
+ array()
 
  ////3. Write an algorithm to Split the Input String into two strings based on even and odd indexes.
 //// Left pad with '000' and right pad with '111' to the split string and display the output.
