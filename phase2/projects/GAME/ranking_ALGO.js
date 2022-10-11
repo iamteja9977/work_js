@@ -41,8 +41,8 @@ let newWinners = [];
 let temp = [];
 
 
-// console.log(winnerData);//2D Array
-winnerData = winnerData.flat();
+// console.log(winnerData);//2D Array of index
+winnerData = winnerData.flat();//2D-->1D and 3D -->2D
 winnerData.sort((a, b) => a.attempts - b.attempts);
 temp[0] = winnerData[0];
 // console.log(winnerData);
